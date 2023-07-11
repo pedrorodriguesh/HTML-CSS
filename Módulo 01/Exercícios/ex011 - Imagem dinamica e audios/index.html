@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <style>
+        mark{
+            background-color: rgb(138, 194, 138);
+        }
+    </style>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>tenta abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto grande">
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios no HTML5</p>
+    <p>Para colocar áudio usamos a tag <mark>&lt;audio&gt;</mark> e selecionamos o source, temos o parâmetro <mark><i>controls e autoplay</i></mark></p>
+    <audio src="midia/peido.mp3" controls></audio>
+
+    <h2>agora um podcast do guanabara</h2>
+    <audio src="midia/guanacast.mp3" controls></audio> <br>
+
+    <p><MARK>Para garantir a compatibilidade total do site temos outros formatos: MP3, WAV, OGG</MARK></p>
+
+    <audio>
+        <source src="midia/guanacast.mp3" type="audio/mpeg">
+        <source src="midia/guanacast.ogg" type="audio/ogg">
+        <source src="midia/guanacast.wav" type="audio/wav">
+    </audio>
+
+    <p>Infelizmente seu navegador não consegue reproduzir o áudio. Clique <a href="midia/guanacast.zip">aqui</a> para fazer o download. </p>
+    
+</body>
+</html>

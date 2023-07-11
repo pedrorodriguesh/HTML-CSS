@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{       /* aqui estou usando uma pseudoclass de :hover, a pseudoclass usa com : */
+            color: red;
+        }
+
+        div > p {   /* aqui eu estou mostrando que o parágrafo é um CHILDREN da div, está dentro dela, faz isso usando um sinal de maior, nesse caso estou falando para esconder o que está escrito com display: none > */
+            display: none;
+        }
+
+        div:hover > p{   /* já aqui eu estou usando a pseudoclass :hover justamente no parágrafo filho da div */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 150px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui 
+        <p><a href="pseudoclasse.html">Texto escondido....</a></p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>
