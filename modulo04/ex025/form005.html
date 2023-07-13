@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <fieldset>
+        <legend>Sexo</legend> <!-- Botão de radio TEM QUE SER O MESMO NOME-->
+        <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+        <input type="radio" name="sexo" id="isxfem" checked value="F"> <label for="isxfem">Feminino </label>
+    </fieldset>
+
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>    
+            <input type="checkbox" name="esten" id="iesten"> Tênis <br>
+            <input type="checkbox" name="esboxe" id="iesboxe"> Boxe
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
